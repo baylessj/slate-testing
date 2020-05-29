@@ -1,239 +1,1315 @@
----
-title: API Reference
+--- 
 
-language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
+title: Snippets API 
 
-toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+language_tabs: 
+   - shell 
 
-includes:
-  - errors
+toc_footers: 
+   - <a href='#'>Sign Up for a Developer Key</a> 
+   - <a href='https://github.com/lavkumarv'>Documentation Powered by lav</a> 
 
-search: true
----
+includes: 
+   - errors 
 
-# Introduction
+search: true 
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+--- 
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+# Introduction 
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+Test description 
 
-# Authentication
+**Version:** v1 
 
-> To authorize, use this code:
+# Authentication 
 
-```ruby
-require 'kittn'
+|basic|*Basic*|
+|---|---| 
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
+# /ACCOUNTS/CHANGE-PASSWORD/
+## ***POST*** 
 
-```python
-import kittn
+**Description:** Change the user password.
 
-api = kittn.authorize('meowmeowmeow')
-```
+### HTTP Request 
+`***POST*** /accounts/change-password/` 
 
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
+**Parameters**
 
-```javascript
-const kittn = require('kittn');
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
 
-let api = kittn.authorize('meowmeowmeow');
-```
+**Responses**
 
-> Make sure to replace `meowmeowmeow` with your API key.
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+# /ACCOUNTS/LOGIN/
+## ***POST*** 
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+**Description:** Logs in the user via given login and password.
 
-`Authorization: meowmeowmeow`
+### HTTP Request 
+`***POST*** /accounts/login/` 
 
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
+**Parameters**
 
-# Kittens
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
 
-## Get All Kittens
+**Responses**
 
-```ruby
-require 'kittn'
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
+# /ACCOUNTS/LOGOUT/
+## ***POST*** 
 
-```python
-import kittn
+**Description:** Logs out the user. returns an error if the user is not
+authenticated.
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
+### HTTP Request 
+`***POST*** /accounts/logout/` 
 
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
+**Parameters**
 
-```javascript
-const kittn = require('kittn');
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
-```
+**Responses**
 
-> The above command returns JSON structured like this:
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
 
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
+# /ACCOUNTS/PROFILE/
+## ***GET*** 
 
-This endpoint retrieves all kittens.
+**Description:** Get or set user profile.
 
-### HTTP Request
+### HTTP Request 
+`***GET*** /accounts/profile/` 
 
-`GET http://example.com/api/kittens`
+**Parameters**
 
-### Query Parameters
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
 
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+**Responses**
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
 
-## Get a Specific Kitten
+## ***POST*** 
 
-```ruby
-require 'kittn'
+**Description:** Get or set user profile.
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
+### HTTP Request 
+`***POST*** /accounts/profile/` 
 
-```python
-import kittn
+**Parameters**
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
+**Responses**
 
-```javascript
-const kittn = require('kittn');
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
 
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
+## ***PUT*** 
 
-> The above command returns JSON structured like this:
+**Description:** Get or set user profile.
 
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
+### HTTP Request 
+`***PUT*** /accounts/profile/` 
 
-This endpoint retrieves a specific kitten.
+**Parameters**
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
 
-### HTTP Request
+**Responses**
 
-`GET http://example.com/kittens/<ID>`
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
 
-### URL Parameters
+## ***PATCH*** 
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
+**Description:** Get or set user profile.
 
-## Delete a Specific Kitten
+### HTTP Request 
+`***PATCH*** /accounts/profile/` 
 
-```ruby
-require 'kittn'
+**Parameters**
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
 
-```python
-import kittn
+**Responses**
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
-```
+## ***DELETE*** 
 
-```javascript
-const kittn = require('kittn');
+**Description:** Get or set user profile.
 
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
+### HTTP Request 
+`***DELETE*** /accounts/profile/` 
 
-> The above command returns JSON structured like this:
+**Parameters**
 
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
 
-This endpoint deletes a specific kitten.
+**Responses**
 
-### HTTP Request
+| Code | Description |
+| ---- | ----------- |
+| 204 |  |
 
-`DELETE http://example.com/kittens/<ID>`
+# /ACCOUNTS/REGISTER-EMAIL/
+## ***POST*** 
 
-### URL Parameters
+**Description:** Register new email.
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
+### HTTP Request 
+`***POST*** /accounts/register-email/` 
 
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /ACCOUNTS/REGISTER/
+## ***POST*** 
+
+**Description:** Register new user.
+
+### HTTP Request 
+`***POST*** /accounts/register/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /ACCOUNTS/RESET-PASSWORD/
+## ***POST*** 
+
+**Description:** Reset password, given the signature and timestamp from the link.
+
+### HTTP Request 
+`***POST*** /accounts/reset-password/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /ACCOUNTS/SEND-RESET-PASSWORD-LINK/
+## ***POST*** 
+
+**Description:** Send email with reset password link.
+
+### HTTP Request 
+`***POST*** /accounts/send-reset-password-link/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /ACCOUNTS/VERIFY-EMAIL/
+## ***POST*** 
+
+**Description:** Verify email via signature.
+
+### HTTP Request 
+`***POST*** /accounts/verify-email/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /ACCOUNTS/VERIFY-REGISTRATION/
+## ***POST*** 
+
+**Description:** Verify registration via signature.
+
+### HTTP Request 
+`***POST*** /accounts/verify-registration/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /API/{VERSION}/CARS/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /api/{version}/cars/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| version | path |  | Yes | string |
+| page | query | A page number within the paginated result set. | No | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***POST*** 
+
+**Description:** 
+
+### HTTP Request 
+`***POST*** /api/{version}/cars/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /API/{VERSION}/CARS/{ID}/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /api/{version}/cars/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this car. | Yes | integer |
+| version | path |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PUT*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PUT*** /api/{version}/cars/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this car. | Yes | integer |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PATCH*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PATCH*** /api/{version}/cars/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this car. | Yes | integer |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***DELETE*** 
+
+**Description:** 
+
+### HTTP Request 
+`***DELETE*** /api/{version}/cars/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this car. | Yes | integer |
+| version | path |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 204 |  |
+
+# /API/{VERSION}/ODOMSNAPSHOTS/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /api/{version}/odomsnapshots/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| version | path |  | Yes | string |
+| page | query | A page number within the paginated result set. | No | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***POST*** 
+
+**Description:** 
+
+### HTTP Request 
+`***POST*** /api/{version}/odomsnapshots/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /API/{VERSION}/ODOMSNAPSHOTS/{ID}/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /api/{version}/odomsnapshots/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this odom snapshot. | Yes | integer |
+| version | path |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PUT*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PUT*** /api/{version}/odomsnapshots/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this odom snapshot. | Yes | integer |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PATCH*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PATCH*** /api/{version}/odomsnapshots/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this odom snapshot. | Yes | integer |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***DELETE*** 
+
+**Description:** 
+
+### HTTP Request 
+`***DELETE*** /api/{version}/odomsnapshots/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this odom snapshot. | Yes | integer |
+| version | path |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 204 |  |
+
+# /API/{VERSION}/REFUELINGS/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /api/{version}/refuelings/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| version | path |  | Yes | string |
+| page | query | A page number within the paginated result set. | No | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***POST*** 
+
+**Description:** 
+
+### HTTP Request 
+`***POST*** /api/{version}/refuelings/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /API/{VERSION}/REFUELINGS/{ID}/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /api/{version}/refuelings/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this refueling. | Yes | integer |
+| version | path |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PUT*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PUT*** /api/{version}/refuelings/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this refueling. | Yes | integer |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PATCH*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PATCH*** /api/{version}/refuelings/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this refueling. | Yes | integer |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***DELETE*** 
+
+**Description:** 
+
+### HTTP Request 
+`***DELETE*** /api/{version}/refuelings/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this refueling. | Yes | integer |
+| version | path |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 204 |  |
+
+# /API/{VERSION}/TODOS/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /api/{version}/todos/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| version | path |  | Yes | string |
+| page | query | A page number within the paginated result set. | No | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***POST*** 
+
+**Description:** 
+
+### HTTP Request 
+`***POST*** /api/{version}/todos/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /API/{VERSION}/TODOS/{ID}/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /api/{version}/todos/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this todo. | Yes | integer |
+| version | path |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PUT*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PUT*** /api/{version}/todos/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this todo. | Yes | integer |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PATCH*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PATCH*** /api/{version}/todos/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this todo. | Yes | integer |
+| version | path |  | Yes | string |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***DELETE*** 
+
+**Description:** 
+
+### HTTP Request 
+`***DELETE*** /api/{version}/todos/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this todo. | Yes | integer |
+| version | path |  | Yes | string |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 204 |  |
+
+# /AUTH/TOKEN/
+## ***POST*** 
+
+**Description:** Takes a set of user credentials and returns an access and refresh JSON web
+token pair to prove the authentication of those credentials.
+
+### HTTP Request 
+`***POST*** /auth/token/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /AUTH/TOKEN/REFRESH/
+## ***POST*** 
+
+**Description:** Takes a refresh type JSON web token and returns an access type JSON web
+token if the refresh token is valid.
+
+### HTTP Request 
+`***POST*** /auth/token/refresh/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /CARS/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /cars/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| page | query | A page number within the paginated result set. | No | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***POST*** 
+
+**Description:** 
+
+### HTTP Request 
+`***POST*** /cars/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /CARS/{ID}/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /cars/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this car. | Yes | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PUT*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PUT*** /cars/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this car. | Yes | integer |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PATCH*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PATCH*** /cars/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this car. | Yes | integer |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***DELETE*** 
+
+**Description:** 
+
+### HTTP Request 
+`***DELETE*** /cars/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this car. | Yes | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 204 |  |
+
+# /ODOMSNAPSHOTS/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /odomsnapshots/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| page | query | A page number within the paginated result set. | No | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***POST*** 
+
+**Description:** 
+
+### HTTP Request 
+`***POST*** /odomsnapshots/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /ODOMSNAPSHOTS/{ID}/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /odomsnapshots/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this odom snapshot. | Yes | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PUT*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PUT*** /odomsnapshots/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this odom snapshot. | Yes | integer |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PATCH*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PATCH*** /odomsnapshots/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this odom snapshot. | Yes | integer |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***DELETE*** 
+
+**Description:** 
+
+### HTTP Request 
+`***DELETE*** /odomsnapshots/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this odom snapshot. | Yes | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 204 |  |
+
+# /REFUELINGS/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /refuelings/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| page | query | A page number within the paginated result set. | No | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***POST*** 
+
+**Description:** 
+
+### HTTP Request 
+`***POST*** /refuelings/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /REFUELINGS/{ID}/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /refuelings/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this refueling. | Yes | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PUT*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PUT*** /refuelings/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this refueling. | Yes | integer |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PATCH*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PATCH*** /refuelings/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this refueling. | Yes | integer |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***DELETE*** 
+
+**Description:** 
+
+### HTTP Request 
+`***DELETE*** /refuelings/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this refueling. | Yes | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 204 |  |
+
+# /TODOS/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /todos/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| page | query | A page number within the paginated result set. | No | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***POST*** 
+
+**Description:** 
+
+### HTTP Request 
+`***POST*** /todos/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 201 |  |
+
+# /TODOS/{ID}/
+## ***GET*** 
+
+**Description:** 
+
+### HTTP Request 
+`***GET*** /todos/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this todo. | Yes | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PUT*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PUT*** /todos/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this todo. | Yes | integer |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***PATCH*** 
+
+**Description:** 
+
+### HTTP Request 
+`***PATCH*** /todos/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this todo. | Yes | integer |
+| data | body |  | Yes |  |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 200 |  |
+
+## ***DELETE*** 
+
+**Description:** 
+
+### HTTP Request 
+`***DELETE*** /todos/{id}/` 
+
+**Parameters**
+
+| Name | Located in | Description | Required | Type |
+| ---- | ---------- | ----------- | -------- | ---- |
+| id | path | A unique integer value identifying this todo. | Yes | integer |
+
+**Responses**
+
+| Code | Description |
+| ---- | ----------- |
+| 204 |  |
+
+<!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
