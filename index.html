@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Snippets API</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -201,7 +201,7 @@
       <script src="javascripts/all-c5541673.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -212,9 +212,6 @@
       <img src="images/logo-1e815a84.png" class="logo" alt="Logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -228,16 +225,334 @@
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
+            <a href="#accounts-change-password" class="toc-h1 toc-link" data-title="/ACCOUNTS/CHANGE-PASSWORD/">/ACCOUNTS/CHANGE-PASSWORD/</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#post" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#accounts-login" class="toc-h1 toc-link" data-title="/ACCOUNTS/LOGIN/">/ACCOUNTS/LOGIN/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-2" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#accounts-logout" class="toc-h1 toc-link" data-title="/ACCOUNTS/LOGOUT/">/ACCOUNTS/LOGOUT/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-3" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#accounts-profile" class="toc-h1 toc-link" data-title="/ACCOUNTS/PROFILE/">/ACCOUNTS/PROFILE/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#post-4" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#put" class="toc-h2 toc-link" data-title="PUT"><strong><em>PUT</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#patch" class="toc-h2 toc-link" data-title="PATCH"><strong><em>PATCH</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#delete" class="toc-h2 toc-link" data-title="DELETE"><strong><em>DELETE</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#accounts-register-email" class="toc-h1 toc-link" data-title="/ACCOUNTS/REGISTER-EMAIL/">/ACCOUNTS/REGISTER-EMAIL/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-5" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#accounts-register" class="toc-h1 toc-link" data-title="/ACCOUNTS/REGISTER/">/ACCOUNTS/REGISTER/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-6" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#accounts-reset-password" class="toc-h1 toc-link" data-title="/ACCOUNTS/RESET-PASSWORD/">/ACCOUNTS/RESET-PASSWORD/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-7" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#accounts-send-reset-password-link" class="toc-h1 toc-link" data-title="/ACCOUNTS/SEND-RESET-PASSWORD-LINK/">/ACCOUNTS/SEND-RESET-PASSWORD-LINK/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-8" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#accounts-verify-email" class="toc-h1 toc-link" data-title="/ACCOUNTS/VERIFY-EMAIL/">/ACCOUNTS/VERIFY-EMAIL/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-9" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#accounts-verify-registration" class="toc-h1 toc-link" data-title="/ACCOUNTS/VERIFY-REGISTRATION/">/ACCOUNTS/VERIFY-REGISTRATION/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-10" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-version-cars" class="toc-h1 toc-link" data-title="/API/{VERSION}/CARS/">/API/{VERSION}/CARS/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-2" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#post-11" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-version-cars-id" class="toc-h1 toc-link" data-title="/API/{VERSION}/CARS/{ID}/">/API/{VERSION}/CARS/{ID}/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-3" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#put-2" class="toc-h2 toc-link" data-title="PUT"><strong><em>PUT</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#patch-2" class="toc-h2 toc-link" data-title="PATCH"><strong><em>PATCH</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#delete-2" class="toc-h2 toc-link" data-title="DELETE"><strong><em>DELETE</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-version-odomsnapshots" class="toc-h1 toc-link" data-title="/API/{VERSION}/ODOMSNAPSHOTS/">/API/{VERSION}/ODOMSNAPSHOTS/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-4" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#post-12" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-version-odomsnapshots-id" class="toc-h1 toc-link" data-title="/API/{VERSION}/ODOMSNAPSHOTS/{ID}/">/API/{VERSION}/ODOMSNAPSHOTS/{ID}/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-5" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#put-3" class="toc-h2 toc-link" data-title="PUT"><strong><em>PUT</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#patch-3" class="toc-h2 toc-link" data-title="PATCH"><strong><em>PATCH</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#delete-3" class="toc-h2 toc-link" data-title="DELETE"><strong><em>DELETE</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-version-refuelings" class="toc-h1 toc-link" data-title="/API/{VERSION}/REFUELINGS/">/API/{VERSION}/REFUELINGS/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-6" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#post-13" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-version-refuelings-id" class="toc-h1 toc-link" data-title="/API/{VERSION}/REFUELINGS/{ID}/">/API/{VERSION}/REFUELINGS/{ID}/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-7" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#put-4" class="toc-h2 toc-link" data-title="PUT"><strong><em>PUT</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#patch-4" class="toc-h2 toc-link" data-title="PATCH"><strong><em>PATCH</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#delete-4" class="toc-h2 toc-link" data-title="DELETE"><strong><em>DELETE</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-version-todos" class="toc-h1 toc-link" data-title="/API/{VERSION}/TODOS/">/API/{VERSION}/TODOS/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-8" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#post-14" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#api-version-todos-id" class="toc-h1 toc-link" data-title="/API/{VERSION}/TODOS/{ID}/">/API/{VERSION}/TODOS/{ID}/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-9" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#put-5" class="toc-h2 toc-link" data-title="PUT"><strong><em>PUT</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#patch-5" class="toc-h2 toc-link" data-title="PATCH"><strong><em>PATCH</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#delete-5" class="toc-h2 toc-link" data-title="DELETE"><strong><em>DELETE</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#auth-token" class="toc-h1 toc-link" data-title="/AUTH/TOKEN/">/AUTH/TOKEN/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-15" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#auth-token-refresh" class="toc-h1 toc-link" data-title="/AUTH/TOKEN/REFRESH/">/AUTH/TOKEN/REFRESH/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#post-16" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#cars" class="toc-h1 toc-link" data-title="/CARS/">/CARS/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-10" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#post-17" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#cars-id" class="toc-h1 toc-link" data-title="/CARS/{ID}/">/CARS/{ID}/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-11" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#put-6" class="toc-h2 toc-link" data-title="PUT"><strong><em>PUT</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#patch-6" class="toc-h2 toc-link" data-title="PATCH"><strong><em>PATCH</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#delete-6" class="toc-h2 toc-link" data-title="DELETE"><strong><em>DELETE</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#odomsnapshots" class="toc-h1 toc-link" data-title="/ODOMSNAPSHOTS/">/ODOMSNAPSHOTS/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-12" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#post-18" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#odomsnapshots-id" class="toc-h1 toc-link" data-title="/ODOMSNAPSHOTS/{ID}/">/ODOMSNAPSHOTS/{ID}/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-13" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#put-7" class="toc-h2 toc-link" data-title="PUT"><strong><em>PUT</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#patch-7" class="toc-h2 toc-link" data-title="PATCH"><strong><em>PATCH</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#delete-7" class="toc-h2 toc-link" data-title="DELETE"><strong><em>DELETE</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#refuelings" class="toc-h1 toc-link" data-title="/REFUELINGS/">/REFUELINGS/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-14" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#post-19" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#refuelings-id" class="toc-h1 toc-link" data-title="/REFUELINGS/{ID}/">/REFUELINGS/{ID}/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-15" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#put-8" class="toc-h2 toc-link" data-title="PUT"><strong><em>PUT</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#patch-8" class="toc-h2 toc-link" data-title="PATCH"><strong><em>PATCH</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#delete-8" class="toc-h2 toc-link" data-title="DELETE"><strong><em>DELETE</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#todos" class="toc-h1 toc-link" data-title="/TODOS/">/TODOS/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-16" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#post-20" class="toc-h2 toc-link" data-title="POST"><strong><em>POST</em></strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#todos-id" class="toc-h1 toc-link" data-title="/TODOS/{ID}/">/TODOS/{ID}/</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-17" class="toc-h2 toc-link" data-title="GET"><strong><em>GET</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#put-9" class="toc-h2 toc-link" data-title="PUT"><strong><em>PUT</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#patch-9" class="toc-h2 toc-link" data-title="PATCH"><strong><em>PATCH</em></strong></a>
+                  </li>
+                  <li>
+                    <a href="#delete-9" class="toc-h2 toc-link" data-title="DELETE"><strong><em>DELETE</em></strong></a>
                   </li>
               </ul>
           </li>
@@ -247,191 +562,2727 @@
       </ul>
         <ul class="toc-footer">
             <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://github.com/lavkumarv'>Documentation Powered by lav</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Test description </p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/slatedocs/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
+<p><strong>Version:</strong> v1 </p>
 <h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">();</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint retrieves all kittens.</p>
+<table><thead>
+<tr>
+<th>basic</th>
+<th><em>Basic</em></th>
+</tr>
+</thead><tbody>
+</tbody></table>
+<h1 id='accounts-change-password'>/ACCOUNTS/CHANGE-PASSWORD/</h1><h2 id='post'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Change the user password.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
+<p><code>***POST*** /accounts/change-password/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
 <table><thead>
 <tr>
-<th>Parameter</th>
-<th>Default</th>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>201</td>
+<td></td>
 </tr>
 </tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<h1 id='accounts-login'>/ACCOUNTS/LOGIN/</h1><h2 id='post-2'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Logs in the user via given login and password.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
+<p><code>***POST*** /accounts/login/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
 <table><thead>
 <tr>
-<th>Parameter</th>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>201</td>
+<td></td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  <span class="nt">-X</span> DELETE
-  <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="dl">'</span><span class="s1">meowmeowmeow</span><span class="dl">'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>
-<p>This endpoint deletes a specific kitten.</p>
+<h1 id='accounts-logout'>/ACCOUNTS/LOGOUT/</h1><h2 id='post-3'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Logs out the user. returns an error if the user is not
+authenticated.</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
+<p><code>***POST*** /accounts/logout/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
 <table><thead>
 <tr>
-<th>Parameter</th>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td>201</td>
+<td></td>
 </tr>
 </tbody></table>
+<h1 id='accounts-profile'>/ACCOUNTS/PROFILE/</h1><h2 id='get'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> Get or set user profile.</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>***GET*** /accounts/profile/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='post-4'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Get or set user profile.</p>
+<h3 id='http-request-5'>HTTP Request</h3>
+<p><code>***POST*** /accounts/profile/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='put'><strong><em>PUT</em></strong></h2>
+<p><strong>Description:</strong> Get or set user profile.</p>
+<h3 id='http-request-6'>HTTP Request</h3>
+<p><code>***PUT*** /accounts/profile/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='patch'><strong><em>PATCH</em></strong></h2>
+<p><strong>Description:</strong> Get or set user profile.</p>
+<h3 id='http-request-7'>HTTP Request</h3>
+<p><code>***PATCH*** /accounts/profile/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='delete'><strong><em>DELETE</em></strong></h2>
+<p><strong>Description:</strong> Get or set user profile.</p>
+<h3 id='http-request-8'>HTTP Request</h3>
+<p><code>***DELETE*** /accounts/profile/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>204</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='accounts-register-email'>/ACCOUNTS/REGISTER-EMAIL/</h1><h2 id='post-5'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Register new email.</p>
+<h3 id='http-request-9'>HTTP Request</h3>
+<p><code>***POST*** /accounts/register-email/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='accounts-register'>/ACCOUNTS/REGISTER/</h1><h2 id='post-6'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Register new user.</p>
+<h3 id='http-request-10'>HTTP Request</h3>
+<p><code>***POST*** /accounts/register/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='accounts-reset-password'>/ACCOUNTS/RESET-PASSWORD/</h1><h2 id='post-7'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Reset password, given the signature and timestamp from the link.</p>
+<h3 id='http-request-11'>HTTP Request</h3>
+<p><code>***POST*** /accounts/reset-password/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='accounts-send-reset-password-link'>/ACCOUNTS/SEND-RESET-PASSWORD-LINK/</h1><h2 id='post-8'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Send email with reset password link.</p>
+<h3 id='http-request-12'>HTTP Request</h3>
+<p><code>***POST*** /accounts/send-reset-password-link/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='accounts-verify-email'>/ACCOUNTS/VERIFY-EMAIL/</h1><h2 id='post-9'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Verify email via signature.</p>
+<h3 id='http-request-13'>HTTP Request</h3>
+<p><code>***POST*** /accounts/verify-email/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='accounts-verify-registration'>/ACCOUNTS/VERIFY-REGISTRATION/</h1><h2 id='post-10'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Verify registration via signature.</p>
+<h3 id='http-request-14'>HTTP Request</h3>
+<p><code>***POST*** /accounts/verify-registration/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='api-version-cars'>/API/{VERSION}/CARS/</h1><h2 id='get-2'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-15'>HTTP Request</h3>
+<p><code>***GET*** /api/{version}/cars/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>page</td>
+<td>query</td>
+<td>A page number within the paginated result set.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='post-11'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-16'>HTTP Request</h3>
+<p><code>***POST*** /api/{version}/cars/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='api-version-cars-id'>/API/{VERSION}/CARS/{ID}/</h1><h2 id='get-3'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-17'>HTTP Request</h3>
+<p><code>***GET*** /api/{version}/cars/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this car.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='put-2'><strong><em>PUT</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-18'>HTTP Request</h3>
+<p><code>***PUT*** /api/{version}/cars/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this car.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='patch-2'><strong><em>PATCH</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-19'>HTTP Request</h3>
+<p><code>***PATCH*** /api/{version}/cars/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this car.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='delete-2'><strong><em>DELETE</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-20'>HTTP Request</h3>
+<p><code>***DELETE*** /api/{version}/cars/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this car.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>204</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='api-version-odomsnapshots'>/API/{VERSION}/ODOMSNAPSHOTS/</h1><h2 id='get-4'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-21'>HTTP Request</h3>
+<p><code>***GET*** /api/{version}/odomsnapshots/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>page</td>
+<td>query</td>
+<td>A page number within the paginated result set.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='post-12'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-22'>HTTP Request</h3>
+<p><code>***POST*** /api/{version}/odomsnapshots/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='api-version-odomsnapshots-id'>/API/{VERSION}/ODOMSNAPSHOTS/{ID}/</h1><h2 id='get-5'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-23'>HTTP Request</h3>
+<p><code>***GET*** /api/{version}/odomsnapshots/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this odom snapshot.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='put-3'><strong><em>PUT</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-24'>HTTP Request</h3>
+<p><code>***PUT*** /api/{version}/odomsnapshots/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this odom snapshot.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='patch-3'><strong><em>PATCH</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-25'>HTTP Request</h3>
+<p><code>***PATCH*** /api/{version}/odomsnapshots/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this odom snapshot.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='delete-3'><strong><em>DELETE</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-26'>HTTP Request</h3>
+<p><code>***DELETE*** /api/{version}/odomsnapshots/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this odom snapshot.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>204</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='api-version-refuelings'>/API/{VERSION}/REFUELINGS/</h1><h2 id='get-6'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-27'>HTTP Request</h3>
+<p><code>***GET*** /api/{version}/refuelings/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>page</td>
+<td>query</td>
+<td>A page number within the paginated result set.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='post-13'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-28'>HTTP Request</h3>
+<p><code>***POST*** /api/{version}/refuelings/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='api-version-refuelings-id'>/API/{VERSION}/REFUELINGS/{ID}/</h1><h2 id='get-7'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-29'>HTTP Request</h3>
+<p><code>***GET*** /api/{version}/refuelings/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this refueling.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='put-4'><strong><em>PUT</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-30'>HTTP Request</h3>
+<p><code>***PUT*** /api/{version}/refuelings/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this refueling.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='patch-4'><strong><em>PATCH</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-31'>HTTP Request</h3>
+<p><code>***PATCH*** /api/{version}/refuelings/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this refueling.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='delete-4'><strong><em>DELETE</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-32'>HTTP Request</h3>
+<p><code>***DELETE*** /api/{version}/refuelings/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this refueling.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>204</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='api-version-todos'>/API/{VERSION}/TODOS/</h1><h2 id='get-8'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-33'>HTTP Request</h3>
+<p><code>***GET*** /api/{version}/todos/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>page</td>
+<td>query</td>
+<td>A page number within the paginated result set.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='post-14'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-34'>HTTP Request</h3>
+<p><code>***POST*** /api/{version}/todos/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='api-version-todos-id'>/API/{VERSION}/TODOS/{ID}/</h1><h2 id='get-9'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-35'>HTTP Request</h3>
+<p><code>***GET*** /api/{version}/todos/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this todo.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='put-5'><strong><em>PUT</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-36'>HTTP Request</h3>
+<p><code>***PUT*** /api/{version}/todos/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this todo.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='patch-5'><strong><em>PATCH</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-37'>HTTP Request</h3>
+<p><code>***PATCH*** /api/{version}/todos/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this todo.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='delete-5'><strong><em>DELETE</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-38'>HTTP Request</h3>
+<p><code>***DELETE*** /api/{version}/todos/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this todo.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>version</td>
+<td>path</td>
+<td></td>
+<td>Yes</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>204</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='auth-token'>/AUTH/TOKEN/</h1><h2 id='post-15'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Takes a set of user credentials and returns an access and refresh JSON web
+token pair to prove the authentication of those credentials.</p>
+<h3 id='http-request-39'>HTTP Request</h3>
+<p><code>***POST*** /auth/token/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='auth-token-refresh'>/AUTH/TOKEN/REFRESH/</h1><h2 id='post-16'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> Takes a refresh type JSON web token and returns an access type JSON web
+token if the refresh token is valid.</p>
+<h3 id='http-request-40'>HTTP Request</h3>
+<p><code>***POST*** /auth/token/refresh/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='cars'>/CARS/</h1><h2 id='get-10'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-41'>HTTP Request</h3>
+<p><code>***GET*** /cars/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page</td>
+<td>query</td>
+<td>A page number within the paginated result set.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='post-17'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-42'>HTTP Request</h3>
+<p><code>***POST*** /cars/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='cars-id'>/CARS/{ID}/</h1><h2 id='get-11'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-43'>HTTP Request</h3>
+<p><code>***GET*** /cars/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this car.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='put-6'><strong><em>PUT</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-44'>HTTP Request</h3>
+<p><code>***PUT*** /cars/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this car.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='patch-6'><strong><em>PATCH</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-45'>HTTP Request</h3>
+<p><code>***PATCH*** /cars/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this car.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='delete-6'><strong><em>DELETE</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-46'>HTTP Request</h3>
+<p><code>***DELETE*** /cars/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this car.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>204</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='odomsnapshots'>/ODOMSNAPSHOTS/</h1><h2 id='get-12'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-47'>HTTP Request</h3>
+<p><code>***GET*** /odomsnapshots/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page</td>
+<td>query</td>
+<td>A page number within the paginated result set.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='post-18'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-48'>HTTP Request</h3>
+<p><code>***POST*** /odomsnapshots/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='odomsnapshots-id'>/ODOMSNAPSHOTS/{ID}/</h1><h2 id='get-13'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-49'>HTTP Request</h3>
+<p><code>***GET*** /odomsnapshots/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this odom snapshot.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='put-7'><strong><em>PUT</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-50'>HTTP Request</h3>
+<p><code>***PUT*** /odomsnapshots/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this odom snapshot.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='patch-7'><strong><em>PATCH</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-51'>HTTP Request</h3>
+<p><code>***PATCH*** /odomsnapshots/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this odom snapshot.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='delete-7'><strong><em>DELETE</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-52'>HTTP Request</h3>
+<p><code>***DELETE*** /odomsnapshots/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this odom snapshot.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>204</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='refuelings'>/REFUELINGS/</h1><h2 id='get-14'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-53'>HTTP Request</h3>
+<p><code>***GET*** /refuelings/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page</td>
+<td>query</td>
+<td>A page number within the paginated result set.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='post-19'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-54'>HTTP Request</h3>
+<p><code>***POST*** /refuelings/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='refuelings-id'>/REFUELINGS/{ID}/</h1><h2 id='get-15'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-55'>HTTP Request</h3>
+<p><code>***GET*** /refuelings/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this refueling.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='put-8'><strong><em>PUT</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-56'>HTTP Request</h3>
+<p><code>***PUT*** /refuelings/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this refueling.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='patch-8'><strong><em>PATCH</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-57'>HTTP Request</h3>
+<p><code>***PATCH*** /refuelings/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this refueling.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='delete-8'><strong><em>DELETE</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-58'>HTTP Request</h3>
+<p><code>***DELETE*** /refuelings/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this refueling.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>204</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='todos'>/TODOS/</h1><h2 id='get-16'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-59'>HTTP Request</h3>
+<p><code>***GET*** /todos/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>page</td>
+<td>query</td>
+<td>A page number within the paginated result set.</td>
+<td>No</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='post-20'><strong><em>POST</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-60'>HTTP Request</h3>
+<p><code>***POST*** /todos/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>201</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id='todos-id'>/TODOS/{ID}/</h1><h2 id='get-17'><strong><em>GET</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-61'>HTTP Request</h3>
+<p><code>***GET*** /todos/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this todo.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='put-9'><strong><em>PUT</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-62'>HTTP Request</h3>
+<p><code>***PUT*** /todos/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this todo.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='patch-9'><strong><em>PATCH</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-63'>HTTP Request</h3>
+<p><code>***PATCH*** /todos/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this todo.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+<tr>
+<td>data</td>
+<td>body</td>
+<td></td>
+<td>Yes</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id='delete-9'><strong><em>DELETE</em></strong></h2>
+<p><strong>Description:</strong> </p>
+<h3 id='http-request-64'>HTTP Request</h3>
+<p><code>***DELETE*** /todos/{id}/</code> </p>
+
+<p><strong>Parameters</strong></p>
+
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Located in</th>
+<th>Description</th>
+<th>Required</th>
+<th>Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>id</td>
+<td>path</td>
+<td>A unique integer value identifying this todo.</td>
+<td>Yes</td>
+<td>integer</td>
+</tr>
+</tbody></table>
+
+<p><strong>Responses</strong></p>
+
+<table><thead>
+<tr>
+<th>Code</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>204</td>
+<td></td>
+</tr>
+</tbody></table>
+
+<!-- Converted with the swagger-to-slate https://github.com/lavkumarv/swagger-to-slate -->
 <h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
@@ -495,9 +3346,6 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
       <div class="dark-box">
           <div class="lang-selector">
                 <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
     </div>
